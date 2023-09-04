@@ -1,0 +1,23 @@
+ver contenedor carpeta 
+ls
+
+Navegar entre carpetas
+cd 
+
+Regresar una carpeta
+cd ..
+
+Ir a la raiz 
+cd /
+
+Ir a carpetas de discos duros
+cd /mnt
+
+Crear carpeta
+mkdir nombre_carpeta
+
+Asignar permisos a carpeta
+chmod 777 nombre_carpeta 
+
+borrar caroeta recursivamene
+sudo rm -R nombre_carpeta 

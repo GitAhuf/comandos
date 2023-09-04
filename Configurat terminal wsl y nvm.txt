@@ -1,0 +1,48 @@
+Configurar terminal 
+WSL
+1- sudo apt-get update
+2- sudo apt-get upgrade
+3- instalar zsh /
+4- sudo apt-get install zsh // Documentacion https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins
+5- instalar oh my zsh
+6- sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+7- configurar vim .zshrc
+8 añadir z A git
+9- source .zshrc
+10- instalar szh-highlighting
+11- git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+12- Añadir plugins a vim
+13- plugins=( [plugins...] zsh-syntax-highlighting)
+14- source .zshrc
+
+Instalar Power level 10 k
+1- git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+2- ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc.
+
+
+Instalar nvm en wsl
+
+1- open terminal 
+2- sudo apt-get install curl
+3- curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+4- export lines from installation 
+5- nvm list
+6- install node version
+7- nvm install --lts
+8- nvm install 16
+9- nvm use 18
+10- close an open
+11- node -v
+12- nvm alias default 18
+13- node -v
+14- options: nvm use 16 / nvm use default
+
+Instalar Nvm en windows
+
+1-https://github.com/coreybutler/nvm-windows/releases
+2- descargar e instalar nvm-setup.exe
+3- node -v
+4- nvm -v
+5- nvm lists
+6- 14nvm use 14
+7- nvm install 15

@@ -1,0 +1,89 @@
+//iniciar server aws
+curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh" | sudo bash
+
+//git lab ruuner
+sudo apt-get install gitlab-runner
+
+//verificar version gitlab
+sudo gitlab-runner --version
+
+//verificar version gitlab
+sudo gitlab-runner status
+
+//actualiza archivo
+sudo visudo
+gitlab-runner ALL=(ALL:ALL) ALL
+ubuntu ALL=(ALL:ALL) ALL
+
+sudo gitlab-runner register
+
+1- ir repo gitlab
+1.1 ir ci/cd
+2- ir runners expand
+3- copiar url
+4-copiar token
+
+Enter a description for the runner:
+//colocar un nombre
+my-runner
+Enter tags for the runner (comma-separated):
+//colocar tags
+devops
+Registering runner... succeeded
+//colocar
+shell
+
+//regresamos la pagina de gitlab de rrunner,
+// vamos a expandir
+//Available specific runners
+0-Recargamos la pagina
+0.1-verificamos en ruuner que este corriendo
+1-editar en el lapiz
+2-Habilitamos la 3 opción
+
+
+//instalar apache en el servidor
+sudo apt update
+
+sudo apt install apache2
+
+
+
+<Directory /var/www/html>
+        Options FollowSymLinks
+        AllowOverride All
+        Require all granted
+</Directory>
+
+
+sudo apt install unzip
+
+clear
+
+
+//configurar variables inside gitlab
+-setting cd/ci
+-variables > expand
+-crear variables
+1 SSH_PRIVATE_KEY = Pegar clave pem
+- deshabilitar flags
+Protect variable
+2 EC2_IPADDRESS = IP DEL EC2
+- deshabilitar flags
+Protect variable
+3 SSH_USER
+ubuntu
+
+//installa el paquete de zip 
+sudo apt install zip
+
+gitlab-runner verify --delete 
+
+
+//Instalacion gitlab runner in centos
+curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.rpm.sh" | sudo bash
+
+sudo yum install gitlab-runner
+
+
+

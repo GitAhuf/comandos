@@ -1,0 +1,33 @@
+conectar a localHost por consola
+mysql -u root
+mysql -h localhost -u root -p
+
+ingresar a phpMyAdmin
+http://localhost/phpmyadmin/
+
+ver base de datos
+SHOW DATABASES;
+
+crear base de dados
+CREATE DATABASE PRUEBA
+
+borrar database
+DROP DATABASE IF EXIST PRUEBA;
+
+usar ficha
+USE FICHA;
+
+crear tabla
+CREATE TABLE APRENDIZ(ID_APR INT)
+
+ver tablas
+SHOW TABLES;
+
+ver campos de la tabla
+DESCRIBE APRENDIZ
+
+seleccionar campos de una tabla
+SELECT*FROM APRENDIZ;
+
+borrar tabla
+DROP TABLE APRENDIZ

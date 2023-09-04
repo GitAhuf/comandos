@@ -1,0 +1,10 @@
+
+comandos Visal Studio
+
+
+comentar parrafo 
+/* vvcvcvcbcvb
+   dsfsdscfsdc
+   csdxcsxccsc	
+*/
+alt + shift +a 

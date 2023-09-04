@@ -1,0 +1,80 @@
+Linux
+crear proyecto version laravel | composer create-project laravel/laravel miproyecto "8.*"
+
+crear migraciones nuevenebte | php artisan migrate
+crear migraciones nuevenebte | php artisan migrate:fresh
+
+//Generar Factorie
+ php artisan make:factory CategoryFactory
+
+// Almacenar en cache todos los datos de configuracion
+php artisan config:cache
+
+// Limpiar cache de configuracion
+php artisan config:clear
+
+
+
+windows composer create-project laravel/laravel:^8.0 example-app
+
+crear controlador
+php artisan make:controller Api\RegisterController
+
+crear migracion
+php artisan migrate
+
+crear modelo con migracion
+php artisan make:model Category -m
+
+Eliminar y volver a crear las migraciones
+php artisan migrate:fresh
+
+Crear cliente de tipo passport
+php artisan passport:client --password  
+publica vista dentro de 
+php artisan vendor:publish --tag=passport-views
+
+limpiar 
+php artisan clear-compiled
+
+
+
+Crear factory
+php artisan make:factory CategoryFactory
+
+Crear seeder
+php artisan make:seeder UserSeeder 
+
+Crear controlador con todos los metodos necesarios
+php artisan make:controller Api\CategoryController --api   
+
+
+Crear controlador con todos los metodos necesarios indicando al modelo q pertenece
+php artisan make:controller Api\CategoryController --api   +
+
+Crear resource
+php artisan make:resource UserResource 
+
+
+Laravel breze
+composer require laravel/breeze:1.3.1
+php artisan breeze:install
+npm install
+npm run dev
+
+//
+Purgar Tokens
+php artisan passport:purge
+
+//simular cron en local
+php artisan schedule:work
+
+traducir laravel
+https://github.com/Laraveles/spanish
+composer require laraveles/spanish
+php artisan vendor:publish --tag=lang
+// Ej: español
+'locale'          => 'es',
+// Ej: inglés
+'locale'          => 'en',
+

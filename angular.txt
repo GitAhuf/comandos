@@ -1,0 +1,35 @@
+
+
+Instalar angular 
+npm i -g @angular/cli
+
+Hacer un nuevo proyecto
+ng new nombre_proyecto
+
+Crear componentes, rutas, servicios
+ng g c nombre_componente
+
+Crear modulo 
+ng g m carpeta/nombre_modulo
+ng g n nombre --routing
+
+iniciar servidor
+
+iniciar servidor angular en ventana de navegador
+ng serve -o
+
+detener servidor
+ctrl + c 
+
+crear un servicio
+ng g service carpeta/nombre
+
+publicar angular en git hub pages
+ng build --base-href https://ahuf89.github.io/graficas_angular
+
+ngh
+
+
+
+vuejs npm run serve
+quasar dev

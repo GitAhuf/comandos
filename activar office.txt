@@ -1,0 +1,62 @@
+Activar office cmd
+
+Si tienes Office 64 bits debes escribir:
+cscript "%ProgramFiles%\Microsoft Office\Office16\ospp.vbs" /dstatus
+Si tienes Office 2021 32 bits debes escribir:
+cscript "%ProgramFiles(x86)%\Microsoft Office\Office16\ospp.vbs" /dstatus
+Cuando hayas escrito estos comandos pulsamos intro y debes buscar una línea donde nos aparezcan los últimos 5 dígitos, algo parecido a esto:
+
+
+Ahora es muy importante que encuentres la línea donde pone: «Last 5 Characters of installed product Key: XXXXX» , y debes apuntarte los 5 últimos caracteres.
+
+IMPORTANTE: Si eres de esas personas que no le aparece ninguna clave de producto y te aparece un mensaje como este: «Producto Key not Found» puedes saltar el paso 4 y pasar el paso 5.
+
+Paso 4: Ahora vamos a eliminar la licencia que tenemos instalada, sobre todo si eres de esas personas que tenía office instalado y no era original y te aparecen los mensajes como:
+
+Su licencia no es original office 2021
+Hay un problema con su licencia de office 2021
+Su licencia no es original y podría ser víctima office 2021
+No obstante es posible que seas una persona legal y que tuvieses un office de prueba, independientemente de tu situación, es importante limpiar cualquier licencia instalada por lo tanto vamos a eliminar todas las licencias que nos aparezcan con los siguientes comandos, debes sustituir las XXXXX por los 5 últimos caracteres de tu licencia.
+
+Office 32 bits:
+cscript "%ProgramFiles(x86)%\Microsoft Office\Office16\ospp.vbs" /unpkey:XXXX
+Office 64 bits:
+cscript "%ProgramFiles%\Microsoft Office\Office16\ospp.vbs" /unpkey:XXXXX
+Aparecerá un mensaje como este:
+
+Paso 5: Ahora vamos activar Office 2019 con nuestra licencia para ello en el CMD debes ir a la ruta donde tenemos instalado office, con los siguientes comandos:
+
+32 bits:
+cd %ProgramFiles(x86)%\Microsoft Office\Office16
+64 bits:
+cd %ProgramFiles%\Microsoft Office\Office16
+Una vez dentro de esta ruta escribimos en el siguiente comando:
+
+for /f %x in ('dir /b ..\root\Licenses16\ProPlus2021VL_KMS*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%x"
+Ahora deberemos apuntarnos nuestro número de licencia, si no tienes ninguna licencia, debes saber que Microsoft ofrece licencias por volumen, las puedes encontrar en la web oficinal de Microsoft, por lo tanto no son licencias que yo me invente y mucho menos piratas, te las dejo al final de este documento para que puedas copiarlas o bien puedes ir a las web de Microsoft
+
+Una vez selecciones la clave que te interesa, yo por ejemplo voy activar Office Profesional Plus 2021, así que me copiaré la clave y la sustituiré por las X pero el código o bien puedes copiar y pegar este código:
+
+Pero antes debes saber que tengo un canal en Youtube y que me sería de gran ayuda que me apoyes suscribiendote de este modo podré mantener el blog y en canal y seguir creando tutoriales como este:
+
+cscript ospp.vbs /setprt:1688
+cscript ospp.vbs /unpkey:6F7TH >nul
+cscript ospp.vbs /inpkey:FXYTK-NJJ8C-GB6DW-3DYQT-6F7TH
+cscript ospp.vbs /sethst:e8.us.to
+cscript ospp.vbs /act
+
+Activar office ltsc professional plus 2021 cmd
+Producto	GVLK
+Office LTSC Professional Plus 2021	FXYTK-NJJ8C-GB6DW-3DYQT-6F7TH
+Office LTSC Standard 2021	KDX7X-BNVR8-TXXGX-4Q7Y8-78VT3
+Project Professional 2021	FTNWT-C6WBT-8HMGF-K9PRX-QV9H8
+Project Standard 2021	J2JDC-NJCYY-9RGQ4-YXWMH-T3D4T
+Visio LTSC Professional 2021	KNH8D-FGHT4-T8RK3-CTDYJ-K2HT4
+Visio LTSC Standard 2021	MJVNY-BYWPY-CWV6J-2RKRT-4M8QG
+Access LTSC 2021	WM8YG-YNGDD-4JHDC-PG3F4-FC4T4
+Excel LTSC 2021	NWG3X-87C9K-TC7YY-BC2G7-G6RVC
+Outlook LTSC 2021	C9FM6-3N72F-HFJXB-TM3V9-T86R9
+PowerPoint 2021	TY7XF-NFRBR-KJ44C-G83KF-GX27K
+PowerPoint LTSC 2021	G2KWX-3NW6P-PY93R-JXK2T-C9Y9V
+Publisher LTSC 2021	2MW9D-N4BXM-9VBPG-Q7W6M-KFBGQ
+Word LTSC 2021	TN8H9-M34D3-Y64V9-TR72V-X79KV

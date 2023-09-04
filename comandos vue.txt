@@ -1,0 +1,10 @@
+npm install --global yarn   
+yarn --version         
+yarn add create-vite       
+yarn create-vite viteProject --template vue
+yarn //instalar node_modules
+yarn dev //run proyect
+yarn dev --host //run proyect network
+
+yarn add -D vitest 
+

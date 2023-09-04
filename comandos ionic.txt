@@ -1,0 +1,6 @@
+npm i -g @ionic/cli
+ionic serve
+
+capacitor
+# Install the Capacitor Plugins
+$ npm install @capacitor/camera

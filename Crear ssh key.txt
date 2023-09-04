@@ -1,0 +1,8 @@
+#Crear ssh key
+ssh -v
+ls -a ~/.ssh
+ssh -keygen 
+verificar q se haya creado el archivo id_rsa.pub
+abrir el archivo id_rsa.pub
+copiar la llave
+configurar en git 
