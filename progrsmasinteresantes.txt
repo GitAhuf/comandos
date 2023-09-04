@@ -1,3 +1,0 @@
-dragula for drag and drop
-ng-animate
-ngrx
